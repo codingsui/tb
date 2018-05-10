@@ -1,0 +1,4 @@
+com\syl\tb\manage\web\PageController.class
+com\syl\tb\manage\web\PicUploadController.class
+com\syl\tb\manage\web\ItemController.class
+com\syl\tb\manage\web\ItemCatController.class

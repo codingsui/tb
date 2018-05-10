@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tb-common" />
+        <module name="tb-httpclient" />
+        <module name="tb-manage-mapper" />
+        <module name="tb-manage-pojo" />
+        <module name="tb-manage-service" />
+        <module name="tb-manage-web" />
+        <module name="tb-usermanage" />
+        <module name="tb-web" />
+        <module name="tbparent" />
+        <module name="tbusermanage" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="itcast-httpclient" target="1.5" />
+      <module name="tb" target="1.8" />
+      <module name="tb-common" target="1.8" />
+      <module name="tb-httpclient" target="1.8" />
+      <module name="tb-manage" target="1.8" />
+      <module name="tb-manage-mapper" target="1.8" />
+      <module name="tb-manage-pojo" target="1.8" />
+      <module name="tb-manage-service" target="1.8" />
+      <module name="tb-manage-web" target="1.8" />
+      <module name="tb-parent" target="1.8" />
+      <module name="tb-usermanage" target="1.8" />
+      <module name="tb-web" target="1.8" />
+      <module name="tbparent" target="1.8" />
+      <module name="tbusermanage" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

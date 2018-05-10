@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-httpclient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-manage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-manage/tb-manage-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-manage/tb-manage-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-manage/tb-manage-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-manage/tb-manage-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-usermanage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tb-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

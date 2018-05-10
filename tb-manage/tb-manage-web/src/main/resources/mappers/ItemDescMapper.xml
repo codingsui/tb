@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.syl.tb.manage.mapper.ItemDescMapper">
+  <resultMap id="BaseResultMap" type="com.syl.tb.manage.pojo.ItemDesc">
+    <constructor>
+      <arg column="item_id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="created" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="updated" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+    </constructor>
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.syl.tb.manage.pojo.ItemDesc">
+    <constructor>
+      <arg column="item_id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="created" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="updated" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="item_desc" javaType="java.lang.String" jdbcType="LONGVARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Blob_Column_List">
+    item_desc
+  </sql>
+
+</mapper>
