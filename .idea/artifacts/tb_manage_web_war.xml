@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="tb-manage-web:war">
-    <output-path>$PROJECT_DIR$/tb-manage/tb-manage-web/target</output-path>
-    <root id="archive" name="tb-manage-web.war">
-      <element id="artifact" artifact-name="tb-manage-web:war exploded" />
-    </root>
-  </artifact>
-</component>
