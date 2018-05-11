@@ -1,5 +1,0 @@
-com\syl\tb\common\bean\Result.class
-com\syl\tb\common\bean\PicUploadResult.class
-com\syl\tb\common\bean\ItemCatData.class
-com\syl\tb\common\bean\ItemCatResult.class
-com\syl\tb\common\bean\spring\exetend\converter\json\CallbackMappingJackson2HttpMessageConverter.class
