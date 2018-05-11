@@ -71,8 +71,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+            <state relative-caret-position="495">
+              <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -396,6 +396,11 @@
             <path>
               <item name="tb" type="b2602c69:ProjectViewProjectNode" />
               <item name="tb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tb" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tb" type="b2602c69:ProjectViewProjectNode" />
@@ -963,12 +968,12 @@
       <workItem from="1525852532542" duration="9527000" />
       <workItem from="1525863267987" duration="8382000" />
       <workItem from="1525933486820" duration="20379000" />
-      <workItem from="1526004436566" duration="1582000" />
+      <workItem from="1526004436566" duration="2014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160300000" />
+    <option name="totallyTimeSpent" value="160732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -1409,8 +1414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        <state relative-caret-position="495">
+          <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding />
         </state>
       </provider>

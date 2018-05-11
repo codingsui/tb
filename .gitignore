@@ -7,7 +7,7 @@
 
 #kdiff3 ignore
 *.orig
-*.iml
+
 #maven ignore
 target/
 
@@ -17,7 +17,6 @@ target/
 .classpatch
 
 #idea ignore
-.idea
 .idea/*
 /idea/
 *.ipr
@@ -34,7 +33,3 @@ target/
 #system ignore
 .DS_Store
 Thumbs.db
-
-#file
-
-target
