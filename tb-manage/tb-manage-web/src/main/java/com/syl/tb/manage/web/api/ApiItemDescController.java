@@ -1,10 +1,7 @@
 package com.syl.tb.manage.web.api;
 
-import com.syl.tb.common.bean.ItemCatResult;
 import com.syl.tb.manage.pojo.ItemDesc;
-import com.syl.tb.manage.service.impl.ItemCatService;
 import com.syl.tb.manage.service.impl.ItemDescService;
-import com.syl.tb.manage.service.impl.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

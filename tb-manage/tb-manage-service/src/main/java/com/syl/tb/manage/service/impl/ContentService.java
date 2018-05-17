@@ -5,7 +5,6 @@ import com.github.pagehelper.PageInfo;
 import com.syl.tb.common.bean.Result;
 import com.syl.tb.manage.mapper.ContentMapper;
 import com.syl.tb.manage.pojo.Content;
-import com.syl.tb.manage.service.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

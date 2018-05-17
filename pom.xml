@@ -12,6 +12,11 @@
     <module>tb-common</module>
     <module>tb-web</module>
     <module>tb-httpclient</module>
+      <module>tb-sso</module>
+      <module>tb-order</module>
+      <module>tb-jd-crawle</module>
+      <module>tb-solrj</module>
+    <module>tb-search</module>
   </modules>
 
 
@@ -75,7 +80,11 @@
         <artifactId>spring-aspects</artifactId>
         <version>${spring.version}</version>
       </dependency>
-
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
       <!-- Mybatis -->
       <dependency>
         <groupId>org.mybatis</groupId>

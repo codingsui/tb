@@ -13,15 +13,7 @@
     <artifactId>tb-web</artifactId>
     <packaging>war</packaging>
 
-    <name>tb-web Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -76,7 +68,10 @@
             <scope>provided</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
         <!-- Apache工具组件 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -103,6 +98,10 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
         </dependency>
     </dependencies>
     <build>

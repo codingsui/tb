@@ -3,15 +3,17 @@ package com.syl.tb.manage.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.syl.tb.common.bean.Result;
+import com.syl.tb.common.service.ApiService;
 import com.syl.tb.manage.mapper.ItemMapper;
 import com.syl.tb.manage.pojo.Item;
 import com.syl.tb.manage.pojo.ItemDesc;
 import com.syl.tb.manage.pojo.ItemParamItem;
-import com.syl.tb.manage.service.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.io.IOException;
 import java.util.List;
 
 @Service("itemService")
@@ -23,6 +25,10 @@ public class ItemService extends BaseService<Item> {
     private ItemMapper itemMapper;
     @Autowired
     private ItemParamItemService itemParamItemService;
+    @Autowired
+    private ApiService apiService;
+    @Value("${TB_WEB_URL}")
+    private String TB_WEB_URL;
 
     public boolean saveItem(Item item, String desc,String itemParams) {
         item.setStatus(1);
@@ -58,6 +64,16 @@ public class ItemService extends BaseService<Item> {
         itemDesc.setItemDesc(desc);
         int count1 = itemDescService.updateSelective(itemDesc);
         int count2 = itemParamItemService.updateItemParamItem(item.getId(),itemParams);
+
+        // 通知其他系统更新商品
+        String url = TB_WEB_URL+"/item/cache/"+item.getId()+".html";
+
+        try {
+            apiService.doPost(url);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         return count == 1 && count1 == 1 && count2==1;
     }
 }

@@ -34,7 +34,7 @@
 			<input type="hidden" name="orderItems[0].price" value="${item.price}"/>
 			<input type="hidden" name="orderItems[0].totalFee" value="${item.price}"/>
 			<input type="hidden" name="orderItems[0].title" value="${item.title}"/>
-			<input type="hidden" name="orderItems[0].picPath" value="${item.image}"/>
+			<input type="hidden" name="orderItems[0].picPath" value="${item.images[0]}"/>
 		<input type="hidden" name="payment" value="<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/>"/>
 		<input type="hidden" name="orderShipping.receiverName" value="花和尚"/>
 		<input type="hidden" name="orderShipping.receiverMobile" value="15800000000"/>
@@ -277,7 +277,7 @@
 							<div class="inner">
 								<style type="text/css">.checkout-buttons .checkout-submit{background-color:#e00;position:relative;line-height:36px;overflow:hidden;color:#fff;font-weight:bold;font-size:16px;}.checkout-buttons .checkout-submit b{position:absolute;left:0;top:0;width:135px;height:36px;background:url(http://misc.360buyimg.com/purchase/trade/skin/i/btn-submit.jpg) no-repeat;cursor:pointer;overflow:hidden;}.checkout-buttons .checkout-submit:hover{background-color:#EF494D;}.checkout-buttons  .checkout-submit:hover b{background-position:0 -36px;}.checkout-buttons .checkout-submit-disabled{background-color:#ccc;position:relative;line-height:36px;font-weight:bold;font-size:16px;cursor:not-allowed;}.checkout-buttons .checkout-submit-disabled b{position:absolute;left:0;top:0;width:135px;height:36px;background:url(http://misc.360buyimg.com/purchase/trade/skin/i/btn-disabled.png) no-repeat;cursor:not-allowed;}</style>
                                 <!--input type="submit"  class="checkout-submit" value="" id="order-submit" onclick="javascript:submit_Order();"/-->
-                                <button type="submit" class="checkout-submit"  id="order-submit" onclick="javascript:submit_Order();">
+                                <button type="submit" class="checkout-submit"  id="order-submit" onclick="javascript:submit();">
                                         提交订单
                                         <b></b>
                                 </button>

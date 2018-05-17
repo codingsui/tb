@@ -1,15 +1,12 @@
 package com.syl.tb.manage.service.impl;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.syl.tb.common.bean.ItemCatData;
 import com.syl.tb.common.bean.ItemCatResult;
-import com.syl.tb.manage.mapper.ItemCatMapper;
+import com.syl.tb.common.service.RedisService;
 import com.syl.tb.manage.pojo.ItemCat;
-import com.syl.tb.manage.service.BaseService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -20,8 +17,7 @@ import java.util.Map;
 
 @Service("itemCatService")
 public class ItemCatService extends BaseService<ItemCat> {
-    @Autowired
-    private ItemCatMapper itemCatMapper;
+
     @Autowired
     private RedisService redisService;
     private static final ObjectMapper MAPPER = new ObjectMapper();

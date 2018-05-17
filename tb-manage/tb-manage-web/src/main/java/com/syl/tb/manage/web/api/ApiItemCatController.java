@@ -1,10 +1,8 @@
 package com.syl.tb.manage.web.api;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.syl.tb.common.bean.ItemCatResult;
+import com.syl.tb.common.service.RedisService;
 import com.syl.tb.manage.service.impl.ItemCatService;
-import com.syl.tb.manage.service.impl.RedisService;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

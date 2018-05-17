@@ -1,9 +1,7 @@
 package com.syl.tb.manage.service.impl;
 
 import com.syl.tb.manage.mapper.ItemParamItemMapper;
-import com.syl.tb.manage.pojo.ItemParam;
 import com.syl.tb.manage.pojo.ItemParamItem;
-import com.syl.tb.manage.service.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;

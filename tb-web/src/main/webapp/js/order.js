@@ -5764,25 +5764,47 @@ function cancelAllUsedGiftCards(giftCardType) {
 	 * 提交订单方法
 	 */
 	function submit_Order() {
-		$("#submit_message").hide();
-		jQuery.ajax( {
-			type : "POST",
-			dataType : "json",
-			url : "/service/order/submit",
-			data : $("#orderForm").serialize(),
-			cache : false,
-			success : function(result) {
-				if(result.status == 200){
-					location.href = "/order/success.html?id="+result.data;
-				}else{
-					$("#submit_message").html("订单提交失败，请稍后重试...").show();
-				}
-			},
-			error : function(error) {
-				$("#submit_message").html("亲爱的用户请不要频繁点击, 请稍后重试...").show();
-			}
-		});
+		alert("111")
+        $("#submit_message").hide();
+        jQuery.ajax( {
+        	type : "POST",
+        	dataType : "json",
+        	url : "/order/submit",
+        	data : $("#orderForm").serialize(),
+        	cache : false,
+        	success : function(result) {
+        		if(result.status == 200){
+        			location.href = "/order/success.html?id="+result.data;
+        		}else{
+        			$("#submit_message").html("订单提交失败，请稍后重试...").show();
+        		}
+        	},
+        	error : function(error) {
+        		$("#submit_message").html("亲爱的用户请不要频繁点击, 请稍后重试...").show();
+        	}
+        });
 	}
+	function submit() {
+		alert(1111)
+		$("#submit_message").hide();
+        jQuery.ajax( {
+            type : "POST",
+            dataType : "json",
+            url : "/order/submit",
+            data : $("#orderForm").serialize(),
+            cache : false,
+            success : function(result) {
+                if(result.status == 200){
+                    location.href = "/order/success.html?id="+result.data;
+                }else{
+                    $("#submit_message").html("订单提交失败，请稍后重试...").show();
+                }
+            },
+            error : function(error) {
+                $("#submit_message").html("亲爱的用户请不要频繁点击, 请稍后重试...").show();
+            }
+        });
+    }
 	
 	/**
 	 * 使用以旧换新逻辑

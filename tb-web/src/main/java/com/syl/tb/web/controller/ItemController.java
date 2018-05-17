@@ -26,6 +26,9 @@ public class ItemController {
 
         ItemDesc itemDesc = itemService.queryDescByItemId(itemId);
         mv.addObject("itemDesc",itemDesc);
+
+        String itemParam = itemService.queryItemParamItemByItemId(itemId);
+        mv.addObject("itemParam",itemParam);
         return mv;
     }
 }

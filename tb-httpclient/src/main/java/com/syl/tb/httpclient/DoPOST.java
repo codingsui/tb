@@ -17,16 +17,23 @@ public class DoPOST {
         CloseableHttpClient httpclient = HttpClients.createDefault();
 
         // 创建http POST请求http://www.oschina.net/
-        HttpPost httpPost = new HttpPost("https://www.oschina.net/");
+        HttpPost httpPost = new HttpPost("http://localhost:8082/item/cache/1474391940.html");
         httpPost.setHeader("User-Agent",WEB);
         CloseableHttpResponse response = null;
         try {
             // 执行请求
             response = httpclient.execute(httpPost);
             // 判断返回状态是否为200
-            if (response.getStatusLine().getStatusCode() == 200) {
-                String content = EntityUtils.toString(response.getEntity(), "UTF-8");
-                System.out.println(content);
+            System.out.println(response.getStatusLine().getStatusCode());
+            if (response.getStatusLine().getStatusCode() == 204) {
+                if (response.getEntity() != null){
+                    String content = EntityUtils.toString(response.getEntity(), "UTF-8");
+                    System.out.println("-------------");
+                    System.out.println(content);
+                }else {
+                    System.out.println("******************");
+                }
+
             }
         } finally {
             if (response != null) {
