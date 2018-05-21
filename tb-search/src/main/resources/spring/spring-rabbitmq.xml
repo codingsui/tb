@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+    <!--
+                定义生产者
+    -->
+    <context:property-placeholder location="classpath:rabbitmq.properties" ignore-unresolvable="true"/>
+    <!-- 1.定义RabbitMq的连接工厂-->
+    <rabbit:connection-factory id="connectionFactory" host="${rabbitmq.host}" port="${rabbitmq.port}"
+                               username="${rabbitmq.username}" password="${rabbitmq.password}" virtual-host="${rabbitmq.vhost}"/>
+
+    <!-- 2.管理-->
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+    <!-- 3.定义队列-->
+    <rabbit:queue name="tb-search-item-queue" auto-declare="true" durable="true"/>
+
+    <!-- 4.定义bean 消费者-->
+    <bean id="itemMQhandle" class="com.syl.tb.search.handle.ItemMQHandle"/>
+
+    <!-- 5.定义监听器-->
+    <rabbit:listener-container connection-factory="connectionFactory">
+        <rabbit:listener ref="itemMQhandle" method="execute" queue-names="tb-search-item-queue"/>
+    </rabbit:listener-container>
+</beans>

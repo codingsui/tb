@@ -24,7 +24,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
     <!-- 4.扫描web相关的bean-->
-    <context:component-scan base-package="com.syl.tb.web.controller"/>
+    <context:component-scan base-package="com.syl.tb.web"/>
 
     <mvc:interceptors>
         <!--检测用户登录是否重启-->

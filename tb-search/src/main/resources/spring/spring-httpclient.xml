@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:http.properties" ignore-unresolvable="true"/>
+    <context:component-scan base-package="com.syl.tb.common"/>
+    <bean id="connectionManager" class="org.apache.http.impl.conn.PoolingHttpClientConnectionManager">
+        <property name="maxTotal" value="${http.maxTotal}"/>
+        <property name="defaultMaxPerRoute" value="${http.defaultMaxPerRoute}"/>
+    </bean>
+
+    <bean id="httpClientBuilder" class="org.apache.http.impl.client.HttpClientBuilder">
+        <property name="connectionManager" ref="connectionManager"/>
+    </bean>
+    <!-- httpClient对象 -->
+    <bean scope="prototype" class="org.apache.http.impl.client.CloseableHttpClient" factory-bean="httpClientBuilder" factory-method="build">
+    </bean>
+
+    <bean id="builder2" class="org.apache.http.client.config.RequestConfig.Builder">
+        <property name="connectTimeout" value="${http.connectTimeout}"/>
+        <property name="connectionRequestTimeout" value="${http.connectionRequestTimeout}"/>
+        <property name="socketTimeout" value="${http.socketTimeout}"/>
+        <property name="staleConnectionCheckEnabled" value="${http.staleConnectionCheckEnabled}"/>
+     </bean>
+
+    <bean class="org.apache.http.client.config.RequestConfig" factory-bean="builder2" factory-method="build" />
+
+    <!-- 定期清理无效连接-->
+    <bean class="com.syl.tb.common.httpclient.IdleConnectionEvictor">
+        <constructor-arg index="0" ref="connectionManager"/>
+    </bean>
+</beans>

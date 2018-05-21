@@ -1,0 +1,832 @@
+DEBUG http-bio-8086-exec-1 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] to manual commit
+DEBUG http-bio-8086-exec-1 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8086-exec-1 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbeb8c2]
+DEBUG http-bio-8086-exec-1 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8086-exec-1 com.syl.tb.cart.mapper.CartMapper.selectByExample - ==>  Preparing: SELECT id,user_id,item_id,item_title,item_image,item_price,num,created,updated FROM tb_cart WHERE ( user_id = ? ) order by created DESC 
+DEBUG http-bio-8086-exec-1 com.syl.tb.cart.mapper.CartMapper.selectByExample - ==> Parameters: 10(Long)
+DEBUG http-bio-8086-exec-1 com.syl.tb.cart.mapper.CartMapper.selectByExample - <==      Total: 1
+DEBUG http-bio-8086-exec-1 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbeb8c2]
+DEBUG http-bio-8086-exec-1 org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbeb8c2]
+DEBUG http-bio-8086-exec-1 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbeb8c2]
+DEBUG http-bio-8086-exec-1 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dbeb8c2]
+DEBUG http-bio-8086-exec-1 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8086-exec-1 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java]
+DEBUG http-bio-8086-exec-1 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] after transaction
+DEBUG http-bio-8086-exec-1 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8086-exec-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'cart'
+DEBUG http-bio-8086-exec-1 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'cart'; URL [/WEB-INF/jsp/cart.jsp]] in DispatcherServlet with name 'tb-cart'
+DEBUG http-bio-8086-exec-1 org.springframework.web.servlet.view.JstlView - Added model object 'cartList' of type [java.util.ArrayList] to request in view with name 'cart'
+DEBUG http-bio-8086-exec-1 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/cart.jsp] in InternalResourceView 'cart'
+DEBUG http-bio-8086-exec-1 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8086-exec-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sqlSessionFactory'
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'tb-cart' processing POST request for [/service/cart/update/num/1474391940/4]
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /service/cart/update/num/1474391940/4
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/service/cart/update/num/1474391940/4]
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/service/cart/update/num/1474391940/4] are [/**]
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/service/cart/update/num/1474391940/4] are {}
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/service/cart/update/num/1474391940/4] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5580fcae] and 1 interceptor
+DEBUG http-bio-8086-exec-2 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'tb-cart': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8086-exec-2 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'tb-cart' processing POST request for [/service/cart/update/num/1474391940/5]
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /service/cart/update/num/1474391940/5
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/service/cart/update/num/1474391940/5]
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/service/cart/update/num/1474391940/5] are [/**]
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/service/cart/update/num/1474391940/5] are {}
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/service/cart/update/num/1474391940/5] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5580fcae] and 1 interceptor
+DEBUG http-bio-8086-exec-3 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'tb-cart': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8086-exec-3 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'tb-cart' processing GET request for [/cart/list.html]
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /cart/list.html
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.syl.tb.cart.controller.CartController.cartList()]
+DEBUG http-bio-8086-exec-4 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'cartController'
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cart/list.html] is: -1
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.syl.tb.cart.service.UserService.queryByToken]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] for JDBC transaction
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] to manual commit
+DEBUG http-bio-8086-exec-4 org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.apache.http.impl.client.CloseableHttpClient#0'
+DEBUG http-bio-8086-exec-4 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpClientBuilder'
+DEBUG http-bio-8086-exec-4 org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.apache.http.impl.client.CloseableHttpClient#0'
+DEBUG http-bio-8086-exec-4 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG http-bio-8086-exec-4 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8083][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8083][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.execchain.MainClientExec - Stale connection check
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "[read] I/O error: Read timed out"
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.execchain.MainClientExec - Executing request GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 >> GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 >> Host: localhost:8083
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 >> "GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8083[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.5 (java 1.5)[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "Date: Sun, 20 May 2018 09:07:22 GMT[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "70[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "{"id":10,"username":"sun666","phone":"15365995858","email":null,"created":1526284006000,"updated":1526284006000}[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 << Server: Apache-Coyote/1.1
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG http-bio-8086-exec-4 org.apache.http.headers - http-outgoing-0 << Date: Sun, 20 May 2018 09:07:22 GMT
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8083] can be kept alive indefinitely
+DEBUG http-bio-8086-exec-4 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8083][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java]
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] after transaction
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.syl.tb.cart.service.CartService.queryList]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] for JDBC transaction
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] to manual commit
+DEBUG http-bio-8086-exec-4 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8086-exec-4 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c3fd716]
+DEBUG http-bio-8086-exec-4 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8086-exec-4 com.syl.tb.cart.mapper.CartMapper.selectByExample - ==>  Preparing: SELECT id,user_id,item_id,item_title,item_image,item_price,num,created,updated FROM tb_cart WHERE ( user_id = ? ) order by created DESC 
+DEBUG http-bio-8086-exec-4 com.syl.tb.cart.mapper.CartMapper.selectByExample - ==> Parameters: 10(Long)
+DEBUG http-bio-8086-exec-4 com.syl.tb.cart.mapper.CartMapper.selectByExample - <==      Total: 1
+DEBUG http-bio-8086-exec-4 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c3fd716]
+DEBUG http-bio-8086-exec-4 org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c3fd716]
+DEBUG http-bio-8086-exec-4 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c3fd716]
+DEBUG http-bio-8086-exec-4 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c3fd716]
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java]
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] after transaction
+DEBUG http-bio-8086-exec-4 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'cart'; URL [/WEB-INF/jsp/cart.jsp]] in DispatcherServlet with name 'tb-cart'
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.view.JstlView - Added model object 'cartList' of type [java.util.ArrayList] to request in view with name 'cart'
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/cart.jsp] in InternalResourceView 'cart'
+DEBUG http-bio-8086-exec-4 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'tb-cart' processing POST request for [/service/cart/update/num/1474391940/4]
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /service/cart/update/num/1474391940/4
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Did not find handler method for [/service/cart/update/num/1474391940/4]
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/service/cart/update/num/1474391940/4] are [/**]
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/service/cart/update/num/1474391940/4] are {}
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/service/cart/update/num/1474391940/4] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5580fcae] and 1 interceptor
+DEBUG http-bio-8086-exec-5 org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'tb-cart': assuming HandlerAdapter completed request handling
+DEBUG http-bio-8086-exec-5 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG http-bio-8086-exec-6 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'tb-cart' processing GET request for [/cart/delete/1474391940.html]
+DEBUG http-bio-8086-exec-6 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /cart/delete/1474391940.html
+DEBUG http-bio-8086-exec-6 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.syl.tb.cart.controller.CartController.delete(java.lang.Long)]
+DEBUG http-bio-8086-exec-6 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'cartController'
+DEBUG http-bio-8086-exec-6 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cart/delete/1474391940.html] is: -1
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.syl.tb.cart.service.UserService.queryByToken]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] for JDBC transaction
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] to manual commit
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG http-bio-8086-exec-6 org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.apache.http.impl.client.CloseableHttpClient#0'
+DEBUG http-bio-8086-exec-6 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpClientBuilder'
+DEBUG http-bio-8086-exec-6 org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.apache.http.impl.client.CloseableHttpClient#0'
+DEBUG http-bio-8086-exec-6 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG http-bio-8086-exec-6 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8083][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8083][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.execchain.MainClientExec - Stale connection check
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "end of stream"
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.execchain.MainClientExec - Stale connection detected
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8083
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.conn.HttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8083
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.conn.HttpClientConnectionOperator - Connection established 127.0.0.1:55530<->127.0.0.1:8083
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.execchain.MainClientExec - Executing request GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 >> GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 >> Host: localhost:8083
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 >> "GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8083[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.5 (java 1.5)[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "Date: Sun, 20 May 2018 09:08:23 GMT[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "70[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "{"id":10,"username":"sun666","phone":"15365995858","email":null,"created":1526284006000,"updated":1526284006000}[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 << Server: Apache-Coyote/1.1
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG http-bio-8086-exec-6 org.apache.http.headers - http-outgoing-0 << Date: Sun, 20 May 2018 09:08:23 GMT
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8083] can be kept alive indefinitely
+DEBUG http-bio-8086-exec-6 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8083][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java]
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] after transaction
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.syl.tb.cart.service.CartService.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] for JDBC transaction
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] to manual commit
+DEBUG http-bio-8086-exec-6 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8086-exec-6 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be8bfb6]
+DEBUG http-bio-8086-exec-6 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8086-exec-6 com.syl.tb.cart.mapper.CartMapper.delete - ==>  Preparing: DELETE FROM tb_cart WHERE user_id = ? AND item_id = ? 
+DEBUG http-bio-8086-exec-6 com.syl.tb.cart.mapper.CartMapper.delete - ==> Parameters: 10(Long), 1474391940(Long)
+DEBUG http-bio-8086-exec-6 com.syl.tb.cart.mapper.CartMapper.delete - <==    Updates: 1
+DEBUG http-bio-8086-exec-6 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be8bfb6]
+DEBUG http-bio-8086-exec-6 org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be8bfb6]
+DEBUG http-bio-8086-exec-6 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be8bfb6]
+DEBUG http-bio-8086-exec-6 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be8bfb6]
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java]
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] after transaction
+DEBUG http-bio-8086-exec-6 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8086-exec-6 org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'redirect:/cart/list.html'
+DEBUG http-bio-8086-exec-6 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:/cart/list.html'; URL [/cart/list.html]] in DispatcherServlet with name 'tb-cart'
+DEBUG http-bio-8086-exec-6 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'tb-cart' processing GET request for [/cart/list.html]
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Looking up handler method for path /cart/list.html
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.syl.tb.cart.controller.CartController.cartList()]
+DEBUG http-bio-8086-exec-7 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'cartController'
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/cart/list.html] is: -1
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.syl.tb.cart.service.UserService.queryByToken]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] for JDBC transaction
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] to manual commit
+DEBUG http-bio-8086-exec-7 org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.apache.http.impl.client.CloseableHttpClient#0'
+DEBUG http-bio-8086-exec-7 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpClientBuilder'
+DEBUG http-bio-8086-exec-7 org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.apache.http.impl.client.CloseableHttpClient#0'
+DEBUG http-bio-8086-exec-7 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG http-bio-8086-exec-7 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8083][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8083][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.execchain.MainClientExec - Stale connection check
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "[read] I/O error: Read timed out"
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.execchain.MainClientExec - Executing request GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 >> GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 >> Host: localhost:8083
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 >> "GET /user/720bd3560de4334ed726791a155db1a2 HTTP/1.1[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8083[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.5 (java 1.5)[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "Date: Sun, 20 May 2018 09:08:25 GMT[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "70[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "{"id":10,"username":"sun666","phone":"15365995858","email":null,"created":1526284006000,"updated":1526284006000}[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 << Server: Apache-Coyote/1.1
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG http-bio-8086-exec-7 org.apache.http.headers - http-outgoing-0 << Date: Sun, 20 May 2018 09:08:25 GMT
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8083] can be kept alive indefinitely
+DEBUG http-bio-8086-exec-7 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8083][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 200]
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java]
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] after transaction
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [com.syl.tb.cart.service.CartService.queryList]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] for JDBC transaction
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] to manual commit
+DEBUG http-bio-8086-exec-7 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-bio-8086-exec-7 org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c96b37d]
+DEBUG http-bio-8086-exec-7 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] will be managed by Spring
+DEBUG http-bio-8086-exec-7 com.syl.tb.cart.mapper.CartMapper.selectByExample - ==>  Preparing: SELECT id,user_id,item_id,item_title,item_image,item_price,num,created,updated FROM tb_cart WHERE ( user_id = ? ) order by created DESC 
+DEBUG http-bio-8086-exec-7 com.syl.tb.cart.mapper.CartMapper.selectByExample - ==> Parameters: 10(Long)
+DEBUG http-bio-8086-exec-7 com.syl.tb.cart.mapper.CartMapper.selectByExample - <==      Total: 0
+DEBUG http-bio-8086-exec-7 org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c96b37d]
+DEBUG http-bio-8086-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c96b37d]
+DEBUG http-bio-8086-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c96b37d]
+DEBUG http-bio-8086-exec-7 org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c96b37d]
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java]
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [jdbc:mysql://119.29.103.39:3306/tb?characterEncoding=utf-8&useSSL=false, UserName=sui@61.163.21.218, MySQL Connector Java] after transaction
+DEBUG http-bio-8086-exec-7 org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'cart'; URL [/WEB-INF/jsp/cart.jsp]] in DispatcherServlet with name 'tb-cart'
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.view.JstlView - Added model object 'cartList' of type [java.util.ArrayList] to request in view with name 'cart'
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/cart.jsp] in InternalResourceView 'cart'
+DEBUG http-bio-8086-exec-7 org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections
+DEBUG Thread-5 org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Closing expired connections

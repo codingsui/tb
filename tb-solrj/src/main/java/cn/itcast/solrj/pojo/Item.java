@@ -24,6 +24,7 @@ public class Item {
     @Field("status")
     private Long updated;
 
+
     public Long getId() {
         return id;
     }
