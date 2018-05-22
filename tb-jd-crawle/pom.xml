@@ -47,11 +47,11 @@
             <artifactId>lucene-core</artifactId>
             <version>4.10.2</version>
         </dependency>
-        <dependency>
-            <groupId>cn.itcast.lucene.analyzer</groupId>
-            <artifactId>ik-analyzer</artifactId>
-            <version>2012-4.x</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>cn.itcast.lucene.analyzer</groupId>-->
+            <!--<artifactId>ik-analyzer</artifactId>-->
+            <!--<version>2012-4.x</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-queryparser</artifactId>

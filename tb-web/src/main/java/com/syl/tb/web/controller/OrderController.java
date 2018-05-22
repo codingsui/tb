@@ -1,9 +1,11 @@
 package com.syl.tb.web.controller;
 
+import com.syl.tb.manage.pojo.Cart;
 import com.syl.tb.web.bean.Item;
 import com.syl.tb.web.bean.Order;
 import com.syl.tb.web.bean.User;
 import com.syl.tb.web.interceptor.UserLoginHandlerInterceptor;
+import com.syl.tb.web.service.CartService;
 import com.syl.tb.web.service.ItemService;
 import com.syl.tb.web.service.OrderService;
 import com.syl.tb.web.service.UserService;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RequestMapping("order")
@@ -26,6 +29,8 @@ public class OrderController {
     private OrderService orderService;
     @Autowired
     private ItemService itemService;
+    @Autowired
+    private CartService cartService;
 
     @RequestMapping(value = "{itemId}",method = RequestMethod.GET)
     public ModelAndView toOrder(@PathVariable("itemId")Long itemId){
@@ -57,6 +62,15 @@ public class OrderController {
         mv.addObject("order",order);
 
         mv.addObject("data",new DateTime().plusDays(2).toString("MM月dd日"));
+        return mv;
+    }
+
+    @RequestMapping(value = "create",method = RequestMethod.GET)
+    public ModelAndView toCartOrder(){
+        ModelAndView mv = new ModelAndView("order-cart");
+
+        List<Cart> carts = cartService.queryList();
+        mv.addObject("carts",carts);
         return mv;
     }
 }

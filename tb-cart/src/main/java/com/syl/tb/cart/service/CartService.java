@@ -54,11 +54,7 @@ public class CartService {
     }
 
     public List<Cart> queryList() {
-        Example example = new Example(Cart.class);
-        example.setOrderByClause("created DESC");
-
-        example.createCriteria().andEqualTo("userId",UserThreadLocal.get().getId());
-        return cartMapper.selectByExample(example);
+        return queryList(UserThreadLocal.get().getId());
     }
 
     public int updateNum(Long itemId, Integer num) {
@@ -75,5 +71,13 @@ public class CartService {
         cart.setItemId(itemId);
         cart.setUserId(UserThreadLocal.get().getId());
         return cartMapper.delete(cart);
+    }
+
+    public List<Cart> queryList(Long userId) {
+        Example example = new Example(Cart.class);
+        example.setOrderByClause("created DESC");
+
+        example.createCriteria().andEqualTo("userId",userId);
+        return cartMapper.selectByExample(example);
     }
 }

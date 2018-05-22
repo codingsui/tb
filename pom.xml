@@ -19,6 +19,11 @@
     <module>tb-search</module>
     <module>tb-rabbitmq</module>
     <module>tb-cart</module>
+      <module>tb-dubbo-sso-query-api</module>
+      <module>tb-dubbo-sso-query-service</module>
+    <module>dubbo-a</module>
+    <module>dubbo-b</module>
+    <module>dubbo-b-api</module>
   </modules>
 
 
@@ -48,7 +53,7 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
+        <version>4.12</version>
         <scope>test</scope>
       </dependency>
       <!-- Spring -->
